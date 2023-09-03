@@ -1,0 +1,149 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    display:block;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.wrap{
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.header a img{
+    margin-left: 10px;
+}
+
+.menu{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.menu li{
+    margin-right:20px;
+
+}
+
+.menu li a{
+    display:block;
+    padding:20px 0px 10px 0px;
+    color:#42d3a9;
+    font-size: 20px;
+    border-bottom: 3px solid transparent;
+}
+
+.menu li a:hover{
+    border-bottom: 3px solid #42d3a9;
+}
+
+
+.content ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content ul li{
+    width:350px;
+    box-shadow: 3px 3px 10px #d0d0d0;
+    border-radius: 10px;
+    margin:10px;
+    padding:10px;
+}
+
+.content ul li img{
+    margin: 0 auto;
+}
+
+.content ul li h2{
+    font-size: 20px;
+    font-weight: 700;
+    margin:10px 0px;
+    text-align: center;
+}
+
+.content ul li p{
+    padding:10px 30px;
+}
+
+
+@media (max-width:768px) {
+    .content ul{
+        flex-direction: column;
+    }
+
+    .header{
+        flex-direction: column;
+
+    }
+
+    .menu{
+        margin: 0 auto;
+    }
+
+    .menu li{
+        margin-left:10px;
+    }
+
+}
